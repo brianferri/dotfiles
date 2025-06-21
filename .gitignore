@@ -1,0 +1,10 @@
+*
+!.gitignore
+
+# Shell config
+!.zshrc
+!.zshcfg
+!.zshcfg/**
+
+# Virtual Environments
+!.condarc
