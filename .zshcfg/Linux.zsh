@@ -86,7 +86,7 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
-# ─── Conda & Bun ──────────────────────────────────────────────────────────────
+# ─── Additional Sources ───────────────────────────────────────────────────────
 [[ -f /opt/miniconda3/etc/profile.d/conda.sh ]] && source /opt/miniconda3/etc/profile.d/conda.sh
 [[ -s "$HOME/.bun/_bun" ]] && source "$HOME/.bun/_bun"
 
