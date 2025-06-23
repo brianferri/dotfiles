@@ -1,4 +1,5 @@
+auto_activate_base: false
 channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
-auto_activate_base: false
+channel_priority: strict
