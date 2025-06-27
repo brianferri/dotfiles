@@ -12,11 +12,6 @@ else
 fi
 unset __conda_setup
 
-# ─── pyenv Setup ──────────────────────────────────────────────────────────────
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # ─── Oh-My-Zsh and Theme Setup ────────────────────────────────────────────────
 export ZSH="$HOME/.oh-my-zsh"
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
@@ -41,6 +36,11 @@ alias lt='eza --icons=auto --tree'
 alias vc='code'
 
 # ─── Languages & Tools ───────────────────────────────────────────────────────
+# Pyenv Setup
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # LM Studio
 export PATH="$PATH:$HOME/.cache/lm-studio/bin"
 
