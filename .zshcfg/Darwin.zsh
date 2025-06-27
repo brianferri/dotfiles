@@ -17,16 +17,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# ─── Terminal Enhancements ────────────────────────────────────────────────────
-# Starship prompt
-eval "$(starship init zsh)"
+# ─── Oh-My-Zsh and Theme Setup ────────────────────────────────────────────────
+export ZSH="$HOME/.oh-my-zsh"
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
-# Zsh Autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
+source "$ZSH/oh-my-zsh.sh"
 
-# Zsh Syntax Highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS+=(main brackets pattern)
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.p10k.zsh
 
 # ─── Docker CLI Completions ──────────────────────────────────────────────────
 fpath=(/Users/brianferri/.docker/completions $fpath)
