@@ -1,5 +1,5 @@
 # ─── Load OS-Specific Zsh Config ──────────────────────────────────────────────
-zsh_os=$(uname -s)
+export zsh_os=$(uname -s)
 os_config="$HOME/.zshcfg/${zsh_os}.zsh"
 
 case "$zsh_os" in

@@ -6,5 +6,7 @@
 !.zshcfg
 !.zshcfg/**
 
+!.p10k.zsh
+
 # Virtual Environments
 !.condarc
