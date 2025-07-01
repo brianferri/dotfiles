@@ -6,7 +6,15 @@
 !.zshcfg
 !.zshcfg/**
 
+## p10k
 !.p10k.zsh
+
+## fastfetch
+!.config
+!.config/fastfetch
+!.config/fastfetch/config.jsonc
+!.config/fastfetch/pngs
+!.config/fastfetch/pngs/.gitkeep
 
 # Virtual Environments
 !.condarc
