@@ -186,13 +186,8 @@
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=232
   typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=7
-  # Custom icon.
-  case "$zsh_os" in
-    Linux)  ICON_CONTENT='' ;;
-    Darwin) ICON_CONTENT='' ;;
-  esac
-
-  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION="$ICON_CONTENT"
+  # Custom icon. Set in the `~/.zshrc`
+  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION="$OS_ICON_CONTENT"
   
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.
