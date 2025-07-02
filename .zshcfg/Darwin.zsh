@@ -12,6 +12,9 @@ else
 fi
 unset __conda_setup
 
+# ─── Docker CLI Completions ──────────────────────────────────────────────────
+fpath=(/Users/brianferri/.docker/completions $fpath)
+
 # ─── Oh-My-Zsh and Theme Setup ────────────────────────────────────────────────
 export ZSH="$HOME/.oh-my-zsh"
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
@@ -20,10 +23,6 @@ plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
 source "$ZSH/oh-my-zsh.sh"
 
 source ~/.p10k.zsh
-
-# ─── Docker CLI Completions ──────────────────────────────────────────────────
-fpath=(/Users/brianferri/.docker/completions $fpath)
-autoload -Uz compinit && compinit
 
 # ─── Aliases ─────────────────────────────────────────────────────────────────
 alias obs='open -a "/Applications/OBS.app" --args $@'
@@ -90,3 +89,4 @@ command -v fastfetch &>/dev/null && fastfetch
 # if [[ -z "${ISTERM}" && $- == *i* && $- != *c* ]]; then
 #     is --shell zsh
 # fi
+
