@@ -76,7 +76,7 @@ alias pa="$aurhelper -Ss"
 alias pc="$aurhelper -Sc"
 alias po="$aurhelper -Qtdq | $aurhelper -Rns -"
 
-alias vc='code .'
+alias nv='nvim .'
 alias mkdir='mkdir -p'
 
 # Directory Navigation
