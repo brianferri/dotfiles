@@ -1,3 +1,7 @@
+if [[ -v DEBUG_ZSH_PERF ]]; then
+    zmodload zsh/zprof
+fi
+
 # ─── Load OS-Specific Zsh Config ──────────────────────────────────────────────
 export zsh_os=$(uname -s)
 export OS_ICON_CONTENT=''
@@ -22,3 +26,6 @@ else
     echo "Warning: Skipping $os_config (missing, unsafe, or symlinked)"
 fi
 
+if [[ -v DEBUG_ZSH_PERF ]]; then
+    zprof
+fi
