@@ -17,6 +17,10 @@
             "format": "┌──────────────────────────────────────────┐"
         },
         {
+            "type": "chassis",
+            "key": "  󰇺 Chassis",
+        },
+        {
             "type": "os",
             "key": "  {$OS_ICON_CONTENT} OS",
             "keyColor": "red"
@@ -28,7 +32,7 @@
         },
         {
             "type": "packages",
-            "key": "   Packages",
+            "key": "  󰏗 Packages",
             "keyColor": "green"
         },
         {
@@ -37,13 +41,13 @@
             "keyColor": "green"
         },
         {
-            "type": "wm",
-            "key": "   WM",
+            "type": "terminal",
+            "key": "   Terminal",
             "keyColor": "yellow"
         },
         {
-            "type": "terminal",
-            "key": "   Terminal",
+            "type": "wm",
+            "key": "  󱗃 WM",
             "keyColor": "yellow"
         },
         {
@@ -53,7 +57,7 @@
         "break",
         {
             "type": "title",
-            "key": "  "
+            "key": "  ",
         },
         {
             "type": "custom",
@@ -61,8 +65,8 @@
         },
         {
             "type": "cpu",
-            "format": "{1}",
-            "key": "   CPU",
+            "format": "{1} @ {7}",
+            "key": "   CPU",
             "keyColor": "blue"
         },
         {
