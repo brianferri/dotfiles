@@ -7,7 +7,7 @@ case "$zsh_os" in
         OS_ICON_CONTENT=''
         ;;
     Darwin)
-        OS_ICON_CONTENT=''
+        OS_ICON_CONTENT=''
         ;;
     *)
         echo "Warning: Unsupported OS '$zsh_os', no config loaded"
