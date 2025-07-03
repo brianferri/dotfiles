@@ -3,7 +3,7 @@
     "logo": {
         "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/\" -name \"*.png\" | shuf -n 1)",
         "width": 39,
-        "type": "kitty-direct",
+        "type": "kitty",
     },
     "display": {
         "separator": " : "
