@@ -34,6 +34,8 @@ alias ld='eza -lhD --icons=auto'
 alias lt='eza --icons=auto --tree'
 alias nv='nvim .'
 
+alias npyenv='python -m venv .venv'
+
 # ─── Languages & Tools ───────────────────────────────────────────────────────
 # Pyenv Setup
 export PYENV_ROOT="$HOME/.pyenv"

@@ -79,6 +79,8 @@ alias po="$aurhelper -Qtdq | $aurhelper -Rns -"
 alias nv='nvim .'
 alias mkdir='mkdir -p'
 
+alias npyenv='python -m venv .venv'
+
 # Directory Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
