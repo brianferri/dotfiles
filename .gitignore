@@ -1,20 +1,12 @@
 *
 !.gitignore
 
-# Shell config
 !.zshrc
 !.zshcfg
-!.zshcfg/**
-
-## p10k
+!.condarc
 !.p10k.zsh
 
-## fastfetch
 !.config
 !.config/fastfetch
-!.config/fastfetch/config.jsonc
-!.config/fastfetch/pngs
-!.config/fastfetch/pngs/.gitkeep
+!.config/kitty
 
-# Virtual Environments
-!.condarc
