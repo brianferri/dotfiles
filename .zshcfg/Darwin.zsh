@@ -12,9 +12,6 @@ else
 fi
 unset __conda_setup
 
-# ─── Docker CLI Completions ──────────────────────────────────────────────────
-fpath=(/Users/brianferri/.docker/completions $fpath)
-
 # ─── Oh-My-Zsh and Theme Setup ────────────────────────────────────────────────
 export ZSH="$HOME/.oh-my-zsh"
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
