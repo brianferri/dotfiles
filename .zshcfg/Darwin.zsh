@@ -73,6 +73,9 @@ export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"
 DEFAULT_JAVA_VERSION=21
 export JAVA_HOME=$(/usr/libexec/java_home -v $DEFAULT_JAVA_VERSION)
 
+# Android
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+
 # PHP / Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
