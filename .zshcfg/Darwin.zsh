@@ -32,7 +32,6 @@ alias nv='nvim .'
 alias nvenv='python -m venv .venv'
 
 venv() {source "${1:-.}/.venv/bin/activate"}
-obs() {open -a "/Applications/OBS.app" --args "$@"}
 
 # ─── Languages & Tools ───────────────────────────────────────────────────────
 # Pyenv Setup
