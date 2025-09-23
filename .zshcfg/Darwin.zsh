@@ -22,7 +22,6 @@ source "$ZSH/oh-my-zsh.sh"
 source ~/.p10k.zsh
 
 # ─── Aliases ─────────────────────────────────────────────────────────────────
-alias obs='open -a "/Applications/OBS.app" --args $@'
 alias c='clear'
 alias l='eza -lh --icons=auto'
 alias ls='eza -1 --icons=auto'
@@ -30,8 +29,10 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first'
 alias ld='eza -lhD --icons=auto'
 alias lt='eza --icons=auto --tree'
 alias nv='nvim .'
+alias nvenv='python -m venv .venv'
 
-alias npyenv='python -m venv .venv'
+venv() {source "${1:-.}/.venv/bin/activate"}
+obs() {open -a "/Applications/OBS.app" --args "$@"}
 
 # ─── Languages & Tools ───────────────────────────────────────────────────────
 # Pyenv Setup
