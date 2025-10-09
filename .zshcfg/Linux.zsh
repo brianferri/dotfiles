@@ -7,12 +7,12 @@ __is_tty() {
 export IN_TTY=$(__is_tty true false)
 
 # ─── Oh-My-Zsh and Theme Setup ────────────────────────────────────────────────
-ZSH=/usr/share/oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 if [[ "$IN_TTY" == true ]]; then
     ZSH_THEME="robbyrussell"
 else
-    source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+    source "$ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme"
 fi
 
 plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
