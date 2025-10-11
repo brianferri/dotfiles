@@ -75,6 +75,7 @@ alias pl="$aurhelper -Qs"
 alias pa="$aurhelper -Ss"
 alias pc="$aurhelper -Sc"
 alias po="$aurhelper -Qtdq | $aurhelper -Rns -"
+alias pacs="$aurhelper -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste - - | column -t | sort -nrk 2 | grep MiB | less"
 
 alias nv='nvim .'
 alias mkdir='mkdir -p'
