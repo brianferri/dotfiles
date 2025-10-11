@@ -5,7 +5,7 @@ entry {
 }
 
 configuration {
-    font: "CaskaydiaCove Nerd Font Mono 12";
+    font: "CaskaydiaMono Nerd Font 12";
     lines: 10;
     fixed-num-lines: true;
     padding: 10px;
