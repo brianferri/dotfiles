@@ -1,9 +1,11 @@
+# Apps
 !fastfetch
 !kitty
 !dunst
 !rofi
 
+# DE/Theme
+!kdeglobals
+!Kvantum
 !qt6ct
 !xdg-desktop-portal
-
-!kdeglobals
