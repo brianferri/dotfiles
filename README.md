@@ -12,7 +12,7 @@ To keep my setups in sync across macOS and Linux, the repository is organized wi
 * **System-Specific Configurations**
   OS-dependent Zsh settings live in `.zshcfg/`, with separate files for macOS (`Darwin.zsh`) and Linux (`Linux.zsh`). This lets me tailor shell behavior per platform without splitting the whole repo.
 
-Some Linux-specific stuff like `Kvantum` configs are included in `.config/` but kept non-intrusive so they don’t affect macOS.
+Some Linux-specific configs (like `Kvantum`, `Waybar`) are included in `.config/` but kept non-intrusive so they don’t affect macOS.
 
 If you want to explore my larger or more specialized setups like Neovim or Hyprland, check out my dedicated repos:
 

@@ -7,5 +7,6 @@
 # DE/Theme
 !kdeglobals
 !Kvantum
+!waybar
 !qt6ct
 !xdg-desktop-portal

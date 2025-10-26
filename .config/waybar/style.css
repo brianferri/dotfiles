@@ -1,0 +1,54 @@
+* {
+    font-family: CaskaydiaMono Nerd Font;
+}
+
+window#waybar {
+    background: #292b2e;
+    color: #fdf6e3;
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+    color: #1a1a1a;
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+    color: #292b2e;
+    background: #1a1a1a;
+}
+
+#clock.dow,
+#clock.time,
+#clock.dom,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk {
+    background: #1a1a1a;
+}
+
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk {
+    padding: 0 10px;
+}
+
+#pulseaudio {
+    color: #268bd2;
+}
+#memory {
+    color: #2aa198;
+}
+#cpu {
+    color: #6c71c4;
+}
+#battery {
+    color: #859900;
+}
+#disk {
+    color: #b58900;
+}
