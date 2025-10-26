@@ -24,6 +24,9 @@
         "cpu",
         "custom/left-arrow-light",
         "custom/left-arrow-dark",
+        "network",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
         "battery"
     ],
 
@@ -74,11 +77,11 @@
     },
     "memory": {
         "interval": 5,
-        "format": "Mem {}%"
+        "format": " {}%"
     },
     "cpu": {
         "interval": 5,
-        "format": "CPU {usage:2}%"
+        "format": " {usage:2}%"
     },
     "battery": {
         "states": {
@@ -101,8 +104,8 @@
         "path": "/"
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname} ",
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": " {ifname}",
         "format-disconnected": "",
         "max-length": 50,
         "on-click": "kitty -e 'nmtui'"
