@@ -19,7 +19,7 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
 source "$ZSH/oh-my-zsh.sh"
 
-source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ─── Aliases ─────────────────────────────────────────────────────────────────
 alias c='clear'
