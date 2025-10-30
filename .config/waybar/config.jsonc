@@ -27,6 +27,9 @@
         "network",
         "custom/left-arrow-light",
         "custom/left-arrow-dark",
+        "bluetooth",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
         "battery"
     ],
 
@@ -108,6 +111,15 @@
         "format-ethernet": " {ifname}",
         "format-disconnected": "",
         "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
+        "on-click": "kitty -e 'impala'"
+    },
+    "bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-disabled": "",
+        "format-connected": "󰂱 {num_connections}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "kitty -e 'bluetui'"
     },
 }

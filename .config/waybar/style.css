@@ -24,6 +24,7 @@ window#waybar {
 #memory,
 #cpu,
 #network,
+#bluetooth,
 #battery,
 #disk {
     background: #1a1a1a;
@@ -34,6 +35,7 @@ window#waybar {
 #memory,
 #cpu,
 #network,
+#bluetooth,
 #battery,
 #disk {
     padding: 0 10px;
@@ -53,6 +55,9 @@ window#waybar {
 }
 #network {
     color: #4f89f4
+}
+#bluetooth {
+    color: #2f35ff
 }
 #disk {
     color: #b58900;
