@@ -3,18 +3,18 @@
 }
 
 window#waybar {
-    background: #292b2e;
+    background: #1a1a1a;
     color: #fdf6e3;
 }
 
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
-    color: #1a1a1a;
+    color: #292b2e;
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-    color: #292b2e;
-    background: #1a1a1a;
+    color: #1a1a1a;
+    background: #292b2e;
 }
 
 #clock.dow,
@@ -27,7 +27,8 @@ window#waybar {
 #bluetooth,
 #battery,
 #disk {
-    background: #1a1a1a;
+    color: #33ccff;
+    background: #292b2e;
 }
 
 #clock,
@@ -39,26 +40,4 @@ window#waybar {
 #battery,
 #disk {
     padding: 0 10px;
-}
-
-#pulseaudio {
-    color: #268bd2;
-}
-#memory {
-    color: #2aa198;
-}
-#cpu {
-    color: #6c71c4;
-}
-#battery {
-    color: #859900;
-}
-#network {
-    color: #4f89f4
-}
-#bluetooth {
-    color: #2f35ff
-}
-#disk {
-    color: #b58900;
 }
