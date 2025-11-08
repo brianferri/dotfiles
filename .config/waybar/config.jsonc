@@ -110,6 +110,7 @@
         "format-wifi": " {signalStrength}%",
         "format-ethernet": " {ifname}",
         "format-disconnected": "",
+        "tooltip-format-wifi": "{essid}\t{frequency}GHz\t{signaldBm}dBm\t↑{bandwidthUpBytes}\t↓{bandwidthDownBytes}",
         "max-length": 50,
         "on-click": "kitty -e 'impala'"
     },
