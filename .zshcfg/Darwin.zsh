@@ -16,7 +16,7 @@ unset __conda_setup
 export ZSH="$HOME/.oh-my-zsh"
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
-plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting zig-shell-completions)
 source "$ZSH/oh-my-zsh.sh"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

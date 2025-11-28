@@ -15,7 +15,7 @@ else
     source "$ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme"
 fi
 
-plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting zig-shell-completions)
 source "$ZSH/oh-my-zsh.sh"
 
 [[ "$IN_TTY" == false && -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
