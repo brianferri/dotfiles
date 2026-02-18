@@ -43,9 +43,16 @@ eval "$(pyenv init -)"
 export PATH="$PATH:$HOME/.cache/lm-studio/bin"
 
 # Node / NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
+nvm() {lazy-nvm;nvm $@}
+node() {lazy-nvm;node $@}
+npm() {lazy-nvm;npm $@}
+npx() {lazy-nvm;npx $@}
+lazy-nvm() {
+    unset -f nvm node npm npx
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
+}
 
 # Bun
 export BUN_INSTALL="$HOME/.bun"
