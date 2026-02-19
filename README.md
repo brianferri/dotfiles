@@ -10,12 +10,19 @@ To keep my setups in sync across macOS and Linux, the repository is organized wi
   Common settings like Kitty terminal themes, Fastfetch configs, and various app configurations live inside the `.config/` directory and root-level files like `.condarc` and `.p10k.zsh`. These are used regardless of the OS.
 
 * **System-Specific Configurations**
-  OS-dependent Zsh settings live in `.zshcfg/`, with separate files for macOS (`Darwin.zsh`) and Linux (`Linux.zsh`). This lets me tailor shell behavior per platform without splitting the whole repo.
+  OS-dependent Zsh settings live in `.zshcfg/`, with separate files for macOS (`Darwin.zsh`) and Linux (`Linux.zsh`).
 
-Some Linux-specific configs (like `Kvantum`, `Waybar`) are included in `.config/` but kept non-intrusive so they don’t affect macOS.
+Some Linux-specific configs (like `Kvantum`, `Waybar`) are also included in `.config/`.
 
 If you want to explore my larger or more specialized setups like Neovim or Hyprland, check out my dedicated repos:
 
-* [config.nvim](https://github.com/brianferri/config.nvim)
-* [config.hypr](https://github.com/brianferri/config.hypr)
+* [config.nvim](https://github.com/brianferri/config.nvim) — Neovim config
+* [config.hypr](https://github.com/brianferri/config.hypr) — Hyprland config
 
+## Perf
+
+```sh
+time zsh -i -c exit # To measure the startup time of the configuration
+
+DEBUG_ZSH_PERF=true && source ~/.zshrc # To see what occupies the startup time
+```
