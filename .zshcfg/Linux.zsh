@@ -80,7 +80,7 @@ alias pacs="$aurhelper -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | paste -
 alias nv='nvim .'
 alias mkdir='mkdir -p'
 
-alias nvenv='python -m venv .venv'
+venv() {source "${1:-.}/.venv/bin/activate"}
 
 # Directory Navigation
 alias ..='cd ..'
