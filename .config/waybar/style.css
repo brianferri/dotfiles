@@ -25,7 +25,7 @@ window#waybar {
 #cpu,
 #network,
 #bluetooth,
-#battery,
+#custom-battery,
 #disk {
     color: #33ccff;
     background: #292b2e;
@@ -37,7 +37,7 @@ window#waybar {
 #cpu,
 #network,
 #bluetooth,
-#battery,
+#custom-battery,
 #disk {
     padding: 0 10px;
 }

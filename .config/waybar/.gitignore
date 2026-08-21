@@ -1,2 +1,4 @@
 !config.jsonc
 !style.css
+!scripts
+!scripts/battery.sh
