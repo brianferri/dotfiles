@@ -26,6 +26,7 @@ window#waybar {
 #network,
 #bluetooth,
 #custom-battery,
+#workspaces button.active,
 #disk {
     color: #33ccff;
     background: #292b2e;
@@ -38,6 +39,10 @@ window#waybar {
 #network,
 #bluetooth,
 #custom-battery,
+#workspaces button,
 #disk {
     padding: 0 10px;
+    min-height: 0;
+    border-radius: 0;
+    background: #292b2e;
 }
