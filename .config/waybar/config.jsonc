@@ -37,8 +37,10 @@
         "custom/battery"
     ],
 
+    /** ? https://github.com/Alexays/Waybar/wiki/Module:-Workspaces */
     "hyprland/workspaces": {
         "format": "{icon}",
+        "on-click": "activate",
         "format-icons": {
             "active": "",
             "default": ""
